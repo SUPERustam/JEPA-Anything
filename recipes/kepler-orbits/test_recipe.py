@@ -1,6 +1,7 @@
 import csv
 from dataclasses import asdict
 import json
+from pathlib import Path
 
 import numpy as np
 import pytest
@@ -150,12 +151,24 @@ def test_full_prediction_evaluation_scores_actual_future_and_persistence():
     assert report['improvement_over_teacher_persistence'] == 1.0
 
 
-def test_five_step_smoke_and_analysis(tmp_path):
+def test_five_step_smoke_and_analysis(tmp_path, monkeypatch):
     # This is the only optimizer execution in the suite: exactly five steps.
     output = tmp_path/'smoke'
     config = Config(orbits=16, batch_size=32, smoke=True)
     path = train(config, 5, output)
-    reports = analyze(path)
+    metadata = tmp_path/'._metadata.py'
+    metadata.write_text('AppleDouble metadata is not source code')
+    original_glob = Path.glob
+
+    def source_glob(directory, pattern):
+        matches = list(original_glob(directory, pattern))
+        if directory.name == 'jepa_anything_core' and pattern == '*.py':
+            matches.append(metadata)
+        return iter(matches)
+
+    with monkeypatch.context() as patch:
+        patch.setattr(Path, 'glob', source_glob)
+        reports = analyze(path)
     model, saved_config, checkpoint = load_checkpoint(path)
     assert saved_config == config and checkpoint['steps'] == 5
     torch.manual_seed(config.seed)
@@ -179,6 +192,8 @@ def test_five_step_smoke_and_analysis(tmp_path):
         assert len(list(csv.DictReader(handle))) == 32
     for name in ('config.json', 'normalization.json', 'analysis.json', 'orbit_metadata.json', 'evaluation-provenance.json'):
         json.loads((output/name).read_text())
+    provenance = json.loads((output/'evaluation-provenance.json').read_text())
+    assert all(not Path(name).name.startswith('._') for name in provenance['source_sha256'])
     with (output/'spectral_diagnostics.csv').open() as handle:
         assert len(list(csv.DictReader(handle))) == 2*32*5
     for name in ('scaling.png', 'scaling.pdf'):

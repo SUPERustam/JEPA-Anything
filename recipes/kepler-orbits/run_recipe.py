@@ -332,7 +332,8 @@ def analyze(checkpoint_path, output=None):
     for suffix in ('png', 'pdf'):
         fig.savefig(output / f'scaling.{suffix}', dpi=180)
     plt.close(fig)
-    sources = [Path(__file__), *sorted((ROOT/'jepa-anything-core/src/jepa_anything_core').glob('*.py'))]
+    sources = [Path(__file__), *sorted(p for p in (ROOT/'jepa-anything-core/src/jepa_anything_core').glob('*.py')
+                                      if not p.name.startswith('._'))]
     write_json(output / 'evaluation-provenance.json', {
         'started_utc': started, 'finished_utc': datetime.now(timezone.utc).isoformat(),
         'command': sys.argv, 'checkpoint_sha256': hashlib.sha256(checkpoint_path.read_bytes()).hexdigest(),
