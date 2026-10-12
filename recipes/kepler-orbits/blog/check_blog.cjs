@@ -17,6 +17,8 @@ for(const [file,hash] of Object.entries(data.provenance.source_sha256))assert.eq
 for(const [file,hash] of Object.entries(data.evaluation_provenance.source_sha256))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.resolve(root,'../../..',file))).digest('hex'),hash,file);
 for(const [file,hash] of Object.entries(data.evaluation_provenance.artifact_sha256))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'data/controls',file))).digest('hex'),hash,file);
 assert.equal(data.evaluation_provenance.checkpoint_sha256,data.provenance.artifact_sha256['checkpoint.pt']);
+assert.equal(fs.readFileSync(path.join(root,'data/controls/exit-code.txt'),'utf8').trim(),'0');
+assert(/\d+ passed/.test(fs.readFileSync(path.join(root,'data/controls/run.log'),'utf8')));
 assert.equal(data.evaluation.prediction_evaluation.transitions,208845);
 assert(data.evaluation.prediction_evaluation.mse.learned<data.evaluation.prediction_evaluation.mse.teacher_persistence);
 assert.deepEqual(data.evaluation.harmonic_flags.trained[0],[11,13,15]);

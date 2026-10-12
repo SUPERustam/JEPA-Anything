@@ -1,13 +1,13 @@
 {
-  "started_utc": "2026-10-12T17:31:14.541603+00:00",
-  "finished_utc": "2026-10-12T17:31:19.609902+00:00",
+  "started_utc": "2026-10-12T17:33:02.897696+00:00",
+  "finished_utc": "2026-10-12T17:33:06.424198+00:00",
   "command": [
     "recipes/kepler-orbits/run_recipe.py",
     "analyze",
     "--checkpoint",
-    "/tmp/kepler-audit-checkpoint-10000.pt",
+    "runs/kepler-orbits/train-10000-menv/checkpoint.pt",
     "--output",
-    "runs/kepler-orbits/controls-evaluation-20261012-v3"
+    "runs/kepler-orbits/evaluation-controls-final-20261012"
   ],
   "checkpoint_sha256": "0980df5b3b82ab76fe642dcfe554f61747c5318992c14e7cd8f7a1a9c5ebde7e",
   "source_sha256": {
@@ -19,15 +19,15 @@
     "jepa-anything-core/src/jepa_anything_core/opf.py": "36eeeccd3e15baa5bc34db24cb190fce0eb5f5ea6d0f41ff3f19e1a79dac8751"
   },
   "artifact_sha256": {
-    "frequencies.csv": "4d14f45c4266a79a8372daa23b3e4288bcefed8a00e1ff5cafdf0dd57e159553",
-    "spectral_diagnostics.csv": "6d7c0e19443d8ca5335958f2eaf63650c9fa2f407e3fb48b4100a594b19064ee",
-    "analysis.json": "78fdf2cddc148e1325316243f5193d75be7d60f804fa01effbc7dbd56df80eaa",
-    "scaling.png": "afd9418bb92875527477dc6e132f0b8a6f404716e5f7682d19212cb6546c68b4",
-    "scaling.pdf": "e7668a4e5750a727b60ec47e7437ee3404bff4e081dde5aeb1e48fabb0c446b4"
+    "frequencies.csv": "6b6974dcf68050ecf1bb067535b5ad30943f0cb89c5eb2acf7d04ab6ea993d10",
+    "spectral_diagnostics.csv": "878b85386b1dbc2538b7e25d642acdd8989e8795603a10adfb5de51803de8b5f",
+    "analysis.json": "823f9e8c175f1a41c8ebaa04eec9920625ddd4c0dc0bf145bf7ecd58e3d85c92",
+    "scaling.png": "2ebcf96c99113606c4333c0c90ab9977312b3c36044cc09944a81d213985804c",
+    "scaling.pdf": "37283132c6ca2fdb96aab01ffcd1deb96af7465d83b11fd20981f25fc1e6aff5"
   },
-  "python": "3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 20:54:21) [Clang 16.0.6 ]",
-  "torch": "2.4.1",
-  "numpy": "1.26.4",
+  "python": "3.12.15 (main, Oct  6 2026, 23:50:18) [GCC 15.3.0]",
+  "torch": "2.12.0+cu130",
+  "numpy": "2.4.4",
   "baseline_source": "seed-reconstructed zero-step weights; original initialization was not saved",
   "training_torch": "2.12.0+cu130",
   "optimizer_steps": 10000,

@@ -1,0 +1,190 @@
+Started:2026-10-12T17:32:49Z
+8edd9ee10f10d331d65842550205e77ba518a76b
+/home/container/jepa-anything/tools/miniforge3/envs/menv/bin/python 2.12.0+cu130 2.4.4
+...................................................................... [ 64%]
+......................................                                   [100%]
+108 passed, 2 subtests passed in 9.08s
+{
+  "learned_aggregate": {
+    "slope": -1.4998819658109865,
+    "intercept_log10": -0.7981831826728437,
+    "r_squared_log10": 0.9999999256679961,
+    "mean_absolute_frequency_error": 1.2485998226657272e-05,
+    "mean_relative_frequency_error": 0.00017939298843278745,
+    "median_relative_frequency_error": 0.00011497479363054008,
+    "max_relative_frequency_error": 0.000981287136899045
+  },
+  "learned_factors": [
+    {
+      "slope": -1.5282944003572168,
+      "intercept_log10": -0.7656810759300412,
+      "r_squared_log10": 0.9567419905073178,
+      "mean_absolute_frequency_error": 0.011575626656461986,
+      "mean_relative_frequency_error": 0.09392373728659173,
+      "median_relative_frequency_error": 0.00014116310690442946,
+      "max_relative_frequency_error": 1.0001260841382305
+    },
+    {
+      "slope": -1.499881939337963,
+      "intercept_log10": -0.7981831823415035,
+      "r_squared_log10": 0.9999999256495671,
+      "mean_absolute_frequency_error": 1.2486171553372015e-05,
+      "mean_relative_frequency_error": 0.00017940220942130186,
+      "median_relative_frequency_error": 0.0001149731603702353,
+      "max_relative_frequency_error": 0.0009816035857634908
+    },
+    {
+      "slope": -1.4998819503305418,
+      "intercept_log10": -0.7981831829190846,
+      "r_squared_log10": 0.9999999256543912,
+      "mean_absolute_frequency_error": 1.2486129899432603e-05,
+      "mean_relative_frequency_error": 0.0001793996309342738,
+      "median_relative_frequency_error": 0.00011497213334688006,
+      "max_relative_frequency_error": 0.0009814951140560968
+    },
+    {
+      "slope": -1.499882008976986,
+      "intercept_log10": -0.7981831831756596,
+      "r_squared_log10": 0.9999999256996538,
+      "mean_absolute_frequency_error": 1.2485634608580109e-05,
+      "mean_relative_frequency_error": 0.00017937566226350343,
+      "median_relative_frequency_error": 0.000114977543383743,
+      "max_relative_frequency_error": 0.0009808349977131758
+    }
+  ],
+  "raw_state_physics_check": {
+    "slope": -1.4998819424994216,
+    "intercept_log10": -0.7981831827873084,
+    "r_squared_log10": 0.9999999256491134,
+    "mean_absolute_frequency_error": 1.2486139559513823e-05,
+    "mean_relative_frequency_error": 0.00017940129959578138,
+    "median_relative_frequency_error": 0.00011497195488285872,
+    "max_relative_frequency_error": 0.0009816587007849265
+  },
+  "optimizer_steps": 10000,
+  "smoke": false,
+  "scientific_accuracy_validated": false,
+  "peak_selection": "strongest nonzero Hann-windowed power; no theoretical guidance",
+  "evaluation_seed": 43,
+  "eval_samples": 16384,
+  "frequency_bin_width": 0.001220703125,
+  "untrained_aggregate": {
+    "slope": -1.4998819852358138,
+    "intercept_log10": -0.7981831830616539,
+    "r_squared_log10": 0.9999999256802788,
+    "mean_absolute_frequency_error": 1.248581815693566e-05,
+    "mean_relative_frequency_error": 0.00017938527429162826,
+    "median_relative_frequency_error": 0.00011497585056197135,
+    "max_relative_frequency_error": 0.0009811560287744658
+  },
+  "untrained_factors": [
+    {
+      "slope": -1.4998819588882402,
+      "intercept_log10": -0.7981831827841203,
+      "r_squared_log10": 0.999999925661594,
+      "mean_absolute_frequency_error": 1.2486011271422518e-05,
+      "mean_relative_frequency_error": 0.00017939482031145357,
+      "median_relative_frequency_error": 0.00011497291562645451,
+      "max_relative_frequency_error": 0.0009814666521730242
+    },
+    {
+      "slope": -1.4998820256947967,
+      "intercept_log10": -0.7981831836291121,
+      "r_squared_log10": 0.999999925709685,
+      "mean_absolute_frequency_error": 1.2485462694893264e-05,
+      "mean_relative_frequency_error": 0.00017936899050764385,
+      "median_relative_frequency_error": 0.00011498027661727139,
+      "max_relative_frequency_error": 0.0009807319442014517
+    },
+    {
+      "slope": -1.4998819307821678,
+      "intercept_log10": -0.7981831820161229,
+      "r_squared_log10": 0.9999999256456419,
+      "mean_absolute_frequency_error": 1.2486315433331936e-05,
+      "mean_relative_frequency_error": 0.0001794070747961063,
+      "median_relative_frequency_error": 0.00011499183600438556,
+      "max_relative_frequency_error": 0.0009816269642684006
+    },
+    {
+      "slope": -1.4998820004073572,
+      "intercept_log10": -0.7981831834174031,
+      "r_squared_log10": 0.9999999256886405,
+      "mean_absolute_frequency_error": 1.248569003411569e-05,
+      "mean_relative_frequency_error": 0.00017937981819897766,
+      "median_relative_frequency_error": 0.0001149706294377717,
+      "max_relative_frequency_error": 0.0009810318295255804
+    }
+  ],
+  "baseline_source": "seed-reconstructed zero-step weights; original initialization was not saved",
+  "spectral_diagnostics": "temporal RMS and three-bin power fraction; not confidence intervals",
+  "harmonic_flags": {
+    "trained": [
+      [
+        11,
+        13,
+        15
+      ],
+      [],
+      [],
+      []
+    ],
+    "untrained": [
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  "harmonic_flag_rule": "within 2% of an integer multiple >= 2 of theory; evaluation flag only",
+  "basis_geometry": {
+    "state_dim": 32,
+    "num_factors": 4,
+    "factor_dim": 8,
+    "rank": 32,
+    "minimum_singular_value": 0.9382147117798982,
+    "condition_number": 1.1016579673401012,
+    "max_cross_subspace_overlap": 0.0652157979909073,
+    "max_orthogonality_error": 0.024435912139124875,
+    "max_completeness_error": 0.02272099300970956,
+    "tolerance": 1e-05,
+    "passed": false,
+    "violations": [
+      "basis rows are not orthonormal within tolerance",
+      "factor projectors do not sum to identity within tolerance"
+    ]
+  },
+  "prediction_evaluation": {
+    "trajectories": 51,
+    "transitions": 208845,
+    "mse": {
+      "learned": 0.023989560518266857,
+      "teacher_persistence": 0.061794063561398334,
+      "online_persistence": 0.10541792502748222
+    },
+    "factor_mse": {
+      "learned": [
+        0.019779397980054292,
+        0.033431474762201964,
+        0.018715011970457544,
+        0.024032357360353626
+      ],
+      "teacher_persistence": [
+        0.07332311202983689,
+        0.059509133864521585,
+        0.0678595183121963,
+        0.046484490039038553
+      ],
+      "online_persistence": [
+        0.10153828079727094,
+        0.14213633363557357,
+        0.10382885558346627,
+        0.07416823009361811
+      ]
+    },
+    "improvement_over_teacher_persistence": 0.6117821173156719,
+    "target": "final frozen EMA encoder and learned projection",
+    "units": "latent factor squared error; not physical-state forecasting"
+  },
+  "interpretation": "Scaling tests retained periodicity; the matched zero-step control tests whether training changes it. Prediction is scored separately."
+}
+Finished:2026-10-12T17:33:06Z

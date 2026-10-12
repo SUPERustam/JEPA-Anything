@@ -23,3 +23,8 @@ Original training artifacts and their source snapshot (`data/training-source/`)
 remain unchanged. `data/run.json` bundles both original metrics and the corrected
 evaluation for the local interface. The checker validates training and evaluation
 against their respective source/artifact hashes. No hosted services are used.
+
+The corrected evaluation was rerun in remote `menv` after fetching code from the
+fork, in tmux session `kepler-eval-final-20261012`. Its log and zero exit marker
+are included in `data/controls/`. It reuses the preserved 10,000-step checkpoint
+without a new full training run.
