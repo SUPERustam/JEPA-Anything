@@ -1,0 +1,34 @@
+{
+  "host": "skoltech_container",
+  "remote_root": "/home/container/jepa-anything",
+  "run_directory": "/home/container/jepa-anything/runs/kepler-orbits/train-10000-menv",
+  "tmux_session": "kepler-train-menv",
+  "exit_code": 0,
+  "optimizer_steps": 10000,
+  "environment_prefix": "/home/container/jepa-anything/tools/miniforge3/envs/menv",
+  "python": "3.12.15 (main, Oct  6 2026, 23:50:18) [GCC 15.3.0]",
+  "torch": "2.12.0+cu130",
+  "source_sha256": {
+    "recipes/kepler-orbits/run_recipe.py": "9b512bf58ba4849170ce0ead336ddd2e1f35de52b5f938542dae1f19c883fb4e",
+    "jepa-anything-core/src/jepa_anything_core/__init__.py": "948480eee6d619fa3b6bfd126b60539242afd5549b9e85fd8bed0d1e5b9c62f4",
+    "jepa-anything-core/src/jepa_anything_core/audit.py": "24f6faeb8d926de6c6832531833a0a28868f911acb93b486a68947aba8c0f3a2",
+    "jepa-anything-core/src/jepa_anything_core/baselines.py": "c2c84d5f42994e2e591ab945e9acfa283194028f1b5bd0af8c4419ee12e879ec",
+    "jepa-anything-core/src/jepa_anything_core/losses.py": "bf71499b2a7f610c0b78475a0e60ea2c3726b7e94be65a9ead8d2a3acb097097",
+    "jepa-anything-core/src/jepa_anything_core/opf.py": "36eeeccd3e15baa5bc34db24cb190fce0eb5f5ea6d0f41ff3f19e1a79dac8751"
+  },
+  "artifact_sha256": {
+    "analysis.json": "19875b238e55d46467900e1c070745ccb7d88536dc5b8744815862ec5d067519",
+    "checkpoint.pt": "0980df5b3b82ab76fe642dcfe554f61747c5318992c14e7cd8f7a1a9c5ebde7e",
+    "config.json": "cfcf9f23c1392ab239fc66d03b81665407723f8f81514b39d59bdbbda1d01831",
+    "frequencies.csv": "d46de4564c3c84cb35c5daf92d696f60446b8b8d2b854a58a6c5f385d555ac4f",
+    "metrics.csv": "1221b66d14c86e94e45dd6fef9e306f6fdcf18ba5d7078fcecc34b7ef252f525",
+    "normalization.json": "5cf415b301d95c61a3477bfae7d0c9169d33192964a190d37cf835d626f084d4",
+    "orbit_metadata.json": "6a28ecf469c851fe9e3a3ae193181faf3743d4d0c06adf3eb02a8626f4e635a4",
+    "scaling.pdf": "cd6e8316f1d068e37a15a92ab2f49906f8fd3fd0696701a56a7a669e23082845",
+    "scaling.png": "b4defd364db05ff4283eb81422c56d68a93ea32df087a42b9c79f02a33162daf"
+  },
+  "checkpoint_reload_and_analysis_parity": true,
+  "metrics_rows": 10000,
+  "evaluation_orbits": 32,
+  "source_hash_scope": "Recipe and core Python source; AppleDouble metadata excluded"
+}

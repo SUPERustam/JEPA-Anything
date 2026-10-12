@@ -1,0 +1,35 @@
+{
+  "started_utc": "2026-10-12T14:56:13.300567+00:00",
+  "finished_utc": "2026-10-12T14:56:17.381803+00:00",
+  "command": [
+    "recipes/kepler-orbits/run_recipe.py",
+    "analyze",
+    "--checkpoint",
+    "/tmp/kepler-audit-checkpoint-10000.pt",
+    "--output",
+    "runs/kepler-orbits/controls-evaluation-20261012-v2"
+  ],
+  "checkpoint_sha256": "0980df5b3b82ab76fe642dcfe554f61747c5318992c14e7cd8f7a1a9c5ebde7e",
+  "source_sha256": {
+    "recipes/kepler-orbits/run_recipe.py": "98054e60422aecefae7e5552dccf6e7bdbfa31f1dfcedd739e48d5da3694cd2c",
+    "jepa-anything-core/src/jepa_anything_core/__init__.py": "948480eee6d619fa3b6bfd126b60539242afd5549b9e85fd8bed0d1e5b9c62f4",
+    "jepa-anything-core/src/jepa_anything_core/audit.py": "24f6faeb8d926de6c6832531833a0a28868f911acb93b486a68947aba8c0f3a2",
+    "jepa-anything-core/src/jepa_anything_core/baselines.py": "c2c84d5f42994e2e591ab945e9acfa283194028f1b5bd0af8c4419ee12e879ec",
+    "jepa-anything-core/src/jepa_anything_core/losses.py": "bf71499b2a7f610c0b78475a0e60ea2c3726b7e94be65a9ead8d2a3acb097097",
+    "jepa-anything-core/src/jepa_anything_core/opf.py": "36eeeccd3e15baa5bc34db24cb190fce0eb5f5ea6d0f41ff3f19e1a79dac8751"
+  },
+  "artifact_sha256": {
+    "frequencies.csv": "4d14f45c4266a79a8372daa23b3e4288bcefed8a00e1ff5cafdf0dd57e159553",
+    "spectral_diagnostics.csv": "6d7c0e19443d8ca5335958f2eaf63650c9fa2f407e3fb48b4100a594b19064ee",
+    "analysis.json": "78fdf2cddc148e1325316243f5193d75be7d60f804fa01effbc7dbd56df80eaa",
+    "scaling.png": "afd9418bb92875527477dc6e132f0b8a6f404716e5f7682d19212cb6546c68b4",
+    "scaling.pdf": "22c5e2f85796b6e3ee3e2dfa77c431aa39295308e66a0b674d2a5ae5613fb4bc"
+  },
+  "python": "3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 20:54:21) [Clang 16.0.6 ]",
+  "torch": "2.4.1",
+  "numpy": "1.26.4",
+  "baseline_source": "seed-reconstructed zero-step weights; original initialization was not saved",
+  "training_torch": "2.12.0+cu130",
+  "optimizer_steps": 10000,
+  "evaluation_seed": 43
+}

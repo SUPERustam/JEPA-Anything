@@ -3,10 +3,12 @@ minversion = "8.0"
 testpaths = [
   "jepa-anything-core/tests",
   "jepa-anything-skill/tests",
+  "recipes/kepler-orbits",
 ]
 pythonpath = [
   "jepa-anything-core/src",
   "jepa-anything-skill",
+  "recipes/kepler-orbits",
 ]
 addopts = "-ra --strict-markers"
 

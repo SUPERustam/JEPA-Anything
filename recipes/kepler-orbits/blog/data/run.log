@@ -1,0 +1,63 @@
+Started:2026-10-12T14:08:57Z
+{"python": "3.12.15 (main, Oct  6 2026, 23:50:18) [GCC 15.3.0]", "executable": "/home/container/jepa-anything/tools/miniforge3/envs/menv/bin/python", "prefix": "/home/container/jepa-anything/tools/miniforge3/envs/menv", "torch": "2.12.0+cu130", "numpy": "2.4.4", "matplotlib": "3.10.9", "device": "cpu"}
+9b512bf58ba4849170ce0ead336ddd2e1f35de52b5f938542dae1f19c883fb4e  recipes/kepler-orbits/run_recipe.py
+{
+  "learned_aggregate": {
+    "slope": -1.4998819658109865,
+    "intercept_log10": -0.7981831826728437,
+    "r_squared_log10": 0.9999999256679961,
+    "mean_absolute_frequency_error": 1.2485998226657272e-05,
+    "mean_relative_frequency_error": 0.00017939298843278745,
+    "max_relative_frequency_error": 0.000981287136899045
+  },
+  "learned_factors": [
+    {
+      "slope": -1.5282944003572168,
+      "intercept_log10": -0.7656810759300412,
+      "r_squared_log10": 0.9567419905073178,
+      "mean_absolute_frequency_error": 0.011575626656461986,
+      "mean_relative_frequency_error": 0.09392373728659173,
+      "max_relative_frequency_error": 1.0001260841382305
+    },
+    {
+      "slope": -1.499881939337963,
+      "intercept_log10": -0.7981831823415035,
+      "r_squared_log10": 0.9999999256495671,
+      "mean_absolute_frequency_error": 1.2486171553372015e-05,
+      "mean_relative_frequency_error": 0.00017940220942130186,
+      "max_relative_frequency_error": 0.0009816035857634908
+    },
+    {
+      "slope": -1.4998819503305418,
+      "intercept_log10": -0.7981831829190846,
+      "r_squared_log10": 0.9999999256543912,
+      "mean_absolute_frequency_error": 1.2486129899432603e-05,
+      "mean_relative_frequency_error": 0.0001793996309342738,
+      "max_relative_frequency_error": 0.0009814951140560968
+    },
+    {
+      "slope": -1.499882008976986,
+      "intercept_log10": -0.7981831831756596,
+      "r_squared_log10": 0.9999999256996538,
+      "mean_absolute_frequency_error": 1.2485634608580109e-05,
+      "mean_relative_frequency_error": 0.00017937566226350343,
+      "max_relative_frequency_error": 0.0009808349977131758
+    }
+  ],
+  "raw_state_physics_check": {
+    "slope": -1.4998819424994216,
+    "intercept_log10": -0.7981831827873084,
+    "r_squared_log10": 0.9999999256491134,
+    "mean_absolute_frequency_error": 1.2486139559513823e-05,
+    "mean_relative_frequency_error": 0.00017940129959578138,
+    "max_relative_frequency_error": 0.0009816587007849265
+  },
+  "optimizer_steps": 10000,
+  "smoke": false,
+  "scientific_accuracy_validated": false,
+  "peak_selection": "strongest nonzero Hann-windowed power; no theoretical guidance",
+  "evaluation_seed": 43,
+  "eval_samples": 16384,
+  "frequency_bin_width": 0.001220703125
+}
+Finished:2026-10-12T14:09:43Z

@@ -29,3 +29,7 @@ tensorboard/
 
 # macOS AppleDouble metadata
 ._*
+
+# Remote environment and historical local audit scratch artifacts.
+tools/
+recipes/kepler-orbits/analysis-output/audit-*/

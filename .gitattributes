@@ -1,0 +1,2 @@
+# Preserve artifact hashes, including CSV CRLF record endings.
+recipes/kepler-orbits/blog/data/** -text whitespace=cr-at-eol

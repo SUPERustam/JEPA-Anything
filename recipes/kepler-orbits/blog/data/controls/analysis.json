@@ -1,0 +1,183 @@
+{
+  "learned_aggregate": {
+    "slope": -1.4998819658116591,
+    "intercept_log10": -0.7981831826719976,
+    "r_squared_log10": 0.9999999256679957,
+    "mean_absolute_frequency_error": 1.2485997982397798e-05,
+    "mean_relative_frequency_error": 0.00017939298666730732,
+    "median_relative_frequency_error": 0.00011497477645650012,
+    "max_relative_frequency_error": 0.0009812871491539088
+  },
+  "learned_factors": [
+    {
+      "slope": -1.5282944003602859,
+      "intercept_log10": -0.7656810759313638,
+      "r_squared_log10": 0.9567419905072878,
+      "mean_absolute_frequency_error": 0.011575626655739637,
+      "mean_relative_frequency_error": 0.09392373728381281,
+      "median_relative_frequency_error": 0.00014116305070294155,
+      "max_relative_frequency_error": 1.0001260841142745
+    },
+    {
+      "slope": -1.499881939339812,
+      "intercept_log10": -0.7981831823404104,
+      "r_squared_log10": 0.9999999256495685,
+      "mean_absolute_frequency_error": 1.2486171365399005e-05,
+      "mean_relative_frequency_error": 0.00017940220656909728,
+      "median_relative_frequency_error": 0.00011497313659736275,
+      "max_relative_frequency_error": 0.0009816035940442003
+    },
+    {
+      "slope": -1.499881950322831,
+      "intercept_log10": -0.7981831829164541,
+      "r_squared_log10": 0.9999999256543866,
+      "mean_absolute_frequency_error": 1.248612970091345e-05,
+      "mean_relative_frequency_error": 0.00017939963175480148,
+      "median_relative_frequency_error": 0.00011497212269173662,
+      "max_relative_frequency_error": 0.0009814951917548331
+    },
+    {
+      "slope": -1.4998820089823466,
+      "intercept_log10": -0.7981831831761236,
+      "r_squared_log10": 0.9999999256996553,
+      "mean_absolute_frequency_error": 1.2485634566550144e-05,
+      "mean_relative_frequency_error": 0.00017937565805454733,
+      "median_relative_frequency_error": 0.00011497750766120696,
+      "max_relative_frequency_error": 0.00098083497036483
+    }
+  ],
+  "raw_state_physics_check": {
+    "slope": -1.4998819424994219,
+    "intercept_log10": -0.7981831827873082,
+    "r_squared_log10": 0.9999999256491134,
+    "mean_absolute_frequency_error": 1.2486139559515015e-05,
+    "mean_relative_frequency_error": 0.0001794012995957918,
+    "median_relative_frequency_error": 0.00011497195488285872,
+    "max_relative_frequency_error": 0.0009816587007849265
+  },
+  "optimizer_steps": 10000,
+  "smoke": false,
+  "scientific_accuracy_validated": false,
+  "peak_selection": "strongest nonzero Hann-windowed power; no theoretical guidance",
+  "evaluation_seed": 43,
+  "eval_samples": 16384,
+  "frequency_bin_width": 0.001220703125,
+  "untrained_aggregate": {
+    "slope": -1.499881985228023,
+    "intercept_log10": -0.7981831830613587,
+    "r_squared_log10": 0.9999999256802807,
+    "mean_absolute_frequency_error": 1.2485817933428791e-05,
+    "mean_relative_frequency_error": 0.00017938527252461117,
+    "median_relative_frequency_error": 0.0001149758703244963,
+    "max_relative_frequency_error": 0.0009811560495043281
+  },
+  "untrained_factors": [
+    {
+      "slope": -1.4998819588846497,
+      "intercept_log10": -0.7981831827830798,
+      "r_squared_log10": 0.9999999256616008,
+      "mean_absolute_frequency_error": 1.2486010628816216e-05,
+      "mean_relative_frequency_error": 0.0001793948074960243,
+      "median_relative_frequency_error": 0.00011497287137596235,
+      "max_relative_frequency_error": 0.0009814666671175143
+    },
+    {
+      "slope": -1.4998820256888474,
+      "intercept_log10": -0.798183183628505,
+      "r_squared_log10": 0.9999999257096849,
+      "mean_absolute_frequency_error": 1.2485462420651914e-05,
+      "mean_relative_frequency_error": 0.00017936898761871517,
+      "median_relative_frequency_error": 0.00011498029871381821,
+      "max_relative_frequency_error": 0.0009807319790975377
+    },
+    {
+      "slope": -1.499881930776432,
+      "intercept_log10": -0.7981831820165108,
+      "r_squared_log10": 0.9999999256456263,
+      "mean_absolute_frequency_error": 1.2486315489139074e-05,
+      "mean_relative_frequency_error": 0.00017940708419198273,
+      "median_relative_frequency_error": 0.00011499178352658568,
+      "max_relative_frequency_error": 0.0009816271050306913
+    },
+    {
+      "slope": -1.4998820004011566,
+      "intercept_log10": -0.7981831834181294,
+      "r_squared_log10": 0.9999999256886454,
+      "mean_absolute_frequency_error": 1.248569024314282e-05,
+      "mean_relative_frequency_error": 0.0001793798265666835,
+      "median_relative_frequency_error": 0.0001149707490633034,
+      "max_relative_frequency_error": 0.0009810317884659803
+    }
+  ],
+  "baseline_source": "seed-reconstructed zero-step weights; original initialization was not saved",
+  "spectral_diagnostics": "temporal RMS and three-bin power fraction; not confidence intervals",
+  "harmonic_flags": {
+    "trained": [
+      [
+        11,
+        13,
+        15
+      ],
+      [],
+      [],
+      []
+    ],
+    "untrained": [
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  "harmonic_flag_rule": "within 2% of an integer multiple >= 2 of theory; evaluation flag only",
+  "basis_geometry": {
+    "state_dim": 32,
+    "num_factors": 4,
+    "factor_dim": 8,
+    "rank": 32,
+    "minimum_singular_value": 0.9382147117798985,
+    "condition_number": 1.1016579673401012,
+    "max_cross_subspace_overlap": 0.0652157979909073,
+    "max_orthogonality_error": 0.024435912139124875,
+    "max_completeness_error": 0.02272099300970956,
+    "tolerance": 1e-05,
+    "passed": false,
+    "violations": [
+      "basis rows are not orthonormal within tolerance",
+      "factor projectors do not sum to identity within tolerance"
+    ]
+  },
+  "prediction_evaluation": {
+    "trajectories": 51,
+    "transitions": 208845,
+    "mse": {
+      "learned": 0.023989565950990402,
+      "teacher_persistence": 0.06179406409244141,
+      "online_persistence": 0.10541792691325198
+    },
+    "factor_mse": {
+      "learned": [
+        0.019779399570890553,
+        0.03343149000076283,
+        0.01871501165998716,
+        0.02403236257232107
+      ],
+      "teacher_persistence": [
+        0.07332311532155797,
+        0.05950913348768181,
+        0.0678595174802566,
+        0.0464844900802693
+      ],
+      "online_persistence": [
+        0.10153828356970022,
+        0.14213633510093854,
+        0.10382885721974416,
+        0.07416823176262502
+      ]
+    },
+    "improvement_over_teacher_persistence": 0.6117820327353289,
+    "target": "final frozen EMA encoder and learned projection",
+    "units": "latent factor squared error; not physical-state forecasting"
+  },
+  "interpretation": "Scaling tests retained periodicity; the matched zero-step control tests whether training changes it. Prediction is scored separately."
+}

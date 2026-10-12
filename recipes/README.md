@@ -1,11 +1,17 @@
 # Reviewable recipes
 
-This directory contains a small, reviewable example that exercises the Skill's
-task-design and audit interfaces end to end. It records the source task, the
-expected compiled design, deterministic structural checks, and the evidence
-boundary enforced by the generated contract.
+This directory contains reviewable structural audits and learned-model
+experiments. Each recipe documents its source task, deterministic checks,
+outputs, and evidence limits.
 
-## Included recipe
+## Included recipes
+
+[`kepler-orbits/`](kepler-orbits/) provides a runnable learned-model reconstruction
+of the Kepler orbital-frequency scaling diagnostic, with a five-step CPU smoke
+run, explicit-step training, checkpoint analysis, and physics/spectral tests.
+Its README documents reconstruction choices and scientific limits.
+
+### Structural dynamics fixture
 
 [`synthetic-linear-dynamics/`](synthetic-linear-dynamics/) defines one seeded,
 action-conditioned linear dynamical system. Its context and target are drawn
